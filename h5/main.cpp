@@ -23,10 +23,10 @@ int main()
     cout << "\n=== pointer vs reference test ===" << endl;
 
     int b = 6;
-    // pointerA voidaan vaihtaa osoittamaan b:hen
+
     pointerA = &b;
 
-    // refA = b;  <- tämä EI vaihda refA:n osoitetta, vaan asettaa a = 6
+
     refA = b;
 
     cout << "a: " << a << "  (huom: refA = b muutti a:n arvon!)\n";
@@ -45,7 +45,7 @@ int main()
 
     cout << "\n=== Referenssi argumenttina ===" << endl;
 
-    ClassB &refB = objB;  // viite objB:hen
+    ClassB &refB = objB;
     ClassA2 objA2(refB);
     objA2.setBinfo("Olion Agr asettama info");
 
